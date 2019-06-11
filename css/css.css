@@ -1,0 +1,39 @@
+nav .brand-logo{
+    padding: 0 15px;
+}
+.dots{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-30deg, #09012a, #02001e)
+}
+.top-nav{
+     background: #fff /* #310655; */
+}
+.nav-wrapper a{
+    color: #333333;
+}
+nav ul a:hover {
+    color: #0ba3ca;
+    background-color: #fff
+}
+.carousel{
+    min-height: 500px
+}
+h1, h2, h3{
+    color: #fff
+}
+nav .input-field label i{
+    color: #959595;
+}
+nav ul a:hover{
+    color: #041b50
+}
+.white-color-input{
+    color: #fff
+}
+.input-field>label{
+    font-size: 1.2em;
+    color: #d1d1d1;
+}

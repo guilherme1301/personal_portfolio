@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto 1-2019</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <canvas class="dots"></canvas>
+    <ul id="dropdown1" onclick="sortBy(event.target.innerHTML)" class="dropdown-content">
+        <li><a href="#!">Jogos</a></li>
+        <li><a href="#!">Ferramentas</a></li>
+        <!-- <li class="divider"></li> -->
+        <li><a href="#!">Pesquisa</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav class="top-nav">
+            <div class="nav-wrapper row">
+                <a href="./index.html" class="brand-logo">Portifolio</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <form class="col l2 m3 s4 pull-l3" style="float: right;">
+                    <div class="input-field">
+                        <input id="search" type="search" onkeyup="searchFilter(value)" required style="display: inline-block">                                
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <!-- <i class="material-icons">close</i> -->
+                    </div>
+                </form>
+                <ul class="right col push-l2 hide-on-med-and-down">
+                    <li style="color: #fff"><a href="./addNewProject.html" class="btn waves-effect waves-light green" style="color: #fff"><i class="material-icons right">add</i>Add projeto</a></li>
+                    <li><a class="dropdown-trigger"  href="#" data-target="dropdown1">Filtrar por<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#">Mobile</a></li>
+    </ul>
+
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.13);">
+        <div class="row">
+            <h2 id="page_title" style="text-align: center">Adicionar um novo projeto</h2>
+            <div class="divider" style="margin: auto 15px"></div>
+        </div>
+        <div id="new_project_row" class="row">
+            <form class="col s10 push-s1">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="project_name_input" type="text" class="white-color-input">
+                        <label for="project_name_input">Nome do projeto</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="project_description_input" class="materialize-textarea white-color-input"></textarea>
+                        <label for="project_description_input">Descrição</label>
+                    </div>
+                </div>
+                <!-- <div class="row"> -->
+                    <p style="color: #d1d1d1; font-size: 1.2em">Tags: </p>
+                    <p>
+                        <label style="color: #d1d1d1;">
+                            <input type="checkbox"/>
+                            <span>Jogos</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label style="color: #d1d1d1;">
+                            <input type="checkbox" />
+                            <span>Ferramentas</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label style="color: #d1d1d1;">
+                            <input type="checkbox" />
+                            <span>Pesquisa</span>
+                        </label>
+                    </p>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i style="color: #d1d1d1" class='material-icons prefix'>link</i>
+                            <input id="project_link_input" type="text" class="white-color-input">
+                            <label for="project_link_input">Link para o github</label>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <div class="row right">
+                    <a href="./index.html"  class="btn waves-effect waves-light red" name="cancelar">Cancelar
+                        <i class="material-icons right">cancel</i>
+                    </a>
+                    <!-- <a href="./addNewProject.html" class="btn waves-effect waves-light green" style="color: #fff"><i class="material-icons right">add</i>Add projeto</a>
+                    <button style="margin: 0 15px" class="btn waves-effect waves-light green" type="submit" name="salvar" onclick="alert('Projeto salvo com sucesso!')">Salvar
+                        <i class="material-icons right">send</i>
+                    </button> -->
+                    <a href="./index.html" onclick="alert('Projeto salvo com sucesso!')" class="btn waves-effect waves-light green" name="cancelar">Salvar
+                        <i class="material-icons right">send</i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./materialize/js/materialize.min.js"></script>
+</body>
+</html>
