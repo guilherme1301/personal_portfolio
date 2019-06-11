@@ -15,9 +15,11 @@ nav .brand-logo{
     color: #333333;
 }
 nav ul a:hover {
-    color: #0ba3ca;
-    background-color: #fff
+    background-color: rgba(37, 37, 37, 0.05);
 }
+#dropdown1 li:hover{
+    background-color:inherit;
+}   
 .carousel{
     min-height: 500px
 }
