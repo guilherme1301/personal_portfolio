@@ -163,10 +163,13 @@ function canvasDots() {
 
 window.onload = function() {
     canvasDots()
+    //Activate dropdown
     if(document.getElementById('projects_row'))
         loadContent()
     $(".dropdown-trigger").dropdown();
 
+    //Activate mobile menu 
+    $(".sidenav").sidenav();
 }
 
 function searchFilter(value){

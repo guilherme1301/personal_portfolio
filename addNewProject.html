@@ -26,7 +26,7 @@
             <div class="nav-wrapper row">
                 <a href="./index.html" class="brand-logo">Portifolio</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <form class="col l2 m3 s4 pull-l3" style="float: right;">
+                <form class="col l2 pull-l3 hide-on-med-and-down" style="float: right;">
                     <div class="input-field">
                         <input id="search" type="search" onkeyup="searchFilter(value)" placeholder="Pesquisar" required style="height: auto">                                
                         <label class="label-icon" for="search"><i class="material-icons">search</i></label>
@@ -42,10 +42,20 @@
     </div>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Sass</a></li>
-        <li><a href="#">Components</a></li>
-        <li><a href="#">Javascript</a></li>
-        <li><a href="#">Mobile</a></li>
+        <li>
+            <a href="./index.html" class="brand-logo" style="font-size: 25px; text-align: center;">Portifolio</a>
+            <div class="divider"></div>
+        </li>
+        <li style="display: flex; padding: 0 15px 0 0;">
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <input id="search" type="search" onkeyup="searchFilter(value)" placeholder="Pesquisar" style="height: auto">                                
+        </li>
+        <li style="color: #fff">
+            <a href="./addNewProject.html" class="btn waves-effect waves-light green" style="color: #fff"><i class="material-icons right">add</i>Add projeto</a>
+        </li>
+        <li>
+            <a class="dropdown-trigger"  href="#" data-target="dropdown1">Filtrar por<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
     </ul>
 
     <div class="container" style="background-color: rgba(255, 255, 255, 0.13);">
@@ -54,7 +64,7 @@
             <div class="divider" style="margin: auto 15px"></div>
         </div>
         <div id="new_project_row" class="row">
-            <form class="col s10 push-s1">
+            <form class="col s10 l10 m10 push-s1">
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="project_name_input" type="text" class="white-color-input">
@@ -88,7 +98,7 @@
                         </label>
                     </p>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s8">
                             <i style="color: #d1d1d1" class='material-icons prefix'>link</i>
                             <input id="project_link_input" type="text" class="white-color-input">
                             <label for="project_link_input">Link para o github</label>
