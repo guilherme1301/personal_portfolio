@@ -15,12 +15,16 @@
 </head>
 <body>
     <canvas class="dots"></canvas>
+
+    <!-- Dropdown inside nav bar -->
     <ul id="dropdown1" onclick="sortBy(event.target.innerHTML)" class="dropdown-content">
         <li><a href="#!">Jogos</a></li>
         <li><a href="#!">Ferramentas</a></li>
         <!-- <li class="divider"></li> -->
         <li><a href="#!">Pesquisa</a></li>
     </ul>
+
+    <!-- Top nav bar -->
     <div class="navbar-fixed">
         <nav class="top-nav">
             <div class="nav-wrapper row">
@@ -41,6 +45,7 @@
         </nav>
     </div>
 
+    <!-- Mobile menu -->
     <ul class="sidenav" id="mobile-demo">
         <li>
             <a href="./index.html" class="brand-logo" style="font-size: 25px; text-align: center;">Portifolio</a>
@@ -58,14 +63,24 @@
         </li>
     </ul>
 
+    <!-- Main div -->
     <div class="container" style="background-color: rgba(255, 255, 255, 0.13);">
         <div class="row">
             <h1 id="page_title" style="text-align: center">Meu Portifolio</h1>
             <h5 id="filteringBy" style="display: none"></h5>
+            <h4 id="runningAppTitle" style="text-align: center; display: none; color: #d6d6d6;"></h4>
             <div class="divider" style="margin: auto 15px"></div>
         </div>
-        <div id="projects_row" class="row">
+        <div id="allProjects" class="row">
             <p id="no-results-found" style="text-align: center; display: none; color: #b0b0b0; font-size: 30px"></p>
+        </div>
+        <div id="iframeRow" class="row" style=" display: none">
+            <div class="col s12 m10 l10 push-l1 push-m1">
+                <iframe src="./other_apps/cpf_validator/index.html" frameborder="0" style="min-width: 100%;min-height: 400px;"></iframe>
+            </div>
+            <div class="col m12 push-l1 push-m1" style="padding-bottom: 15px;">
+                <a onclick="iframeOn(false, null)" class="waves-effect waves-light btn-small grey"><i class="material-icons right">arrow_back</i>Voltar</a>
+            </div>
         </div>
     </div>
 
