@@ -20,46 +20,11 @@ const projects = [
         tags:['pesquisa'],
         appFolder: './other_apps/PedraPapelTesoura/index.html'
     },{
-        title: 'Jogo da Forca',
-        description: 'Jogo intenso! Necessita de extrema atenção e sabedoria. Boa sorte!',
-        link: 'https://github.com/guilherme1301/jogo-da-forca',
-        tags: ['jogos'],
-        appFolder: './other_apps/jogo-da-forca/index.html'
-    },
-    {
-        title: 'Validador de CPF',
-        description: 'Essa aplicação faz a verificação de CPFs. Com ela você pode descobrir se o CPF inserido é valido ou não.',
-        link: 'https://github.com/guilherme1301/cpf_validator',
-        tags: ['ferramentas', 'pesquisa'],
-        appFolder: './other_apps/cpf_validator/index.html'
-    },
-    {
-        title: 'Pedra, papel e tesoura',
-        description: 'O jogo que todos conhecemos agora com uma implementação foda!',
-        link: 'https://github.com/guilherme1301/pedra-papel-tesoura',
-        tags:['pesquisa'],
-        appFolder: './other_apps/PedraPapelTesoura/index.html'
-    },
-    {
-        title: 'Jogo da Forca',
-        description: 'Jogo intenso! Necessita de extrema atenção e sabedoria. Boa sorte!',
-        link: 'https://github.com/guilherme1301/jogo-da-forca',
-        tags: ['jogos'],
-        appFolder: './other_apps/jogo-da-forca/index.html'
-    },
-    {
-        title: 'Validador de CPF',
-        description: 'Essa aplicação faz a verificação de CPFs. Com ela você pode descobrir se o CPF inserido é valido ou não.',
-        link: 'https://github.com/guilherme1301/cpf_validator',
-        tags: ['ferramentas', 'pesquisa'],
-        appFolder: './other_apps/cpf_validator/index.html'
-    },
-    {
-        title: 'Pedra, papel e tesoura',
-        description: 'O jogo que todos conhecemos agora com uma implementação foda!',
-        link: 'https://github.com/guilherme1301/pedra-papel-tesoura',
-        tags:['pesquisa'],
-        appFolder: './other_apps/PedraPapelTesoura/index.html'
+        title: 'MapBox',
+        description: 'Um mapa muito doido.',
+        link: 'https://github.com/guilherme1301/map-box',
+        tags: ['ferramentas'],
+        appFolder: './other_apps/MapBox/index.html'
     },
 ]
 
